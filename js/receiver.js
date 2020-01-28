@@ -5,11 +5,11 @@ playerManager.setMessageInterceptor(
   cast.framework.messages.MessageType.LOAD,
   request => {
     castDebugLogger.info('MyAPP.LOG', 'Intercepting LOAD request');
-    castDebugLogger.info(request);
+  //  castDebugLogger.info(request);
 	
 	//document.getElementById("gText").value = request.message;
 	
-    castDebugLogger.info(request.media.entity);
+   // castDebugLogger.info(request.media.entity);
    // if (request.media && request.media.entity) {
     //  request.media.contentId = request.media.entity;
   //  }
