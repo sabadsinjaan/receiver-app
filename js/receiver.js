@@ -1,6 +1,5 @@
 const context = cast.framework.CastReceiverContext.getInstance();
 const playerManager = context.getPlayerManager();
-document.getElementById("gText").innerHTML = "Before intercepting LOAD request..";
 
 playerManager.setMessageInterceptor(
   cast.framework.messages.MessageType.LOAD,
@@ -23,6 +22,7 @@ const castDebugLogger = cast.debug.CastDebugLogger.getInstance();
 // Enable debug logger and show a warning on receiver
 // NOTE: make sure it is disabled on production
 castDebugLogger.setEnabled(true);
+castDebugLogger.showDebugLogs(true);
 
 playerManager.addEventListener(
   cast.framework.events.category.CORE,
