@@ -21,7 +21,7 @@ const castDebugLogger = cast.debug.CastDebugLogger.getInstance();
 
 // Enable debug logger and show a warning on receiver
 // NOTE: make sure it is disabled on production
-castDebugLogger.setEnabled(true);
+castDebugLogger.setEnabled(false);
 
 playerManager.addEventListener(
   cast.framework.events.category.CORE,
