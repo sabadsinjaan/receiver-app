@@ -7,7 +7,7 @@ playerManager.setMessageInterceptor(
     castDebugLogger.info('MyAPP.LOG', 'Intercepting LOAD request');
   //  castDebugLogger.info(request);
 	
-	//document.getElementById("gText").value = request.message;
+	document.getElementById("gText").innerHTML = "Intercepting LOAD request..";
 	
    // castDebugLogger.info(request.media.entity);
    // if (request.media && request.media.entity) {
