@@ -40,7 +40,7 @@ window.onload = () => {
     displayText(event.data);
     // inform all senders on the CastMessageBus of the incoming message event
     // sender message listener will be invoked
-    window.messageBus.send(event.senderId, event.data);
+   // window.messageBus.send(event.senderId, event.data);
   };
 
   // initialize the CastReceiverManager with an application status message
