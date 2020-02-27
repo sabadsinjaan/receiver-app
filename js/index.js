@@ -54,13 +54,13 @@ function displayText(json) {
   console.log(json);
   const gurbani = JSON.parse(json);
   const gurmukhiElement = document.getElementById('gurmukhi');
-  const slide = document.querySelector('.slide');
+  //const slide = document.querySelector('.slide');
 
   clearClasses();
 
   gurmukhiElement.innerHTML = gurbani.gurmukhi ? gurbani.gurmukhi : '';
   
-  if (gurbani.isText) {
+  /*if (gurbani.isText) {
     slide.classList.add('announcement-slide');
   } else {
     slide.classList.remove('announcement-slide');
@@ -69,7 +69,7 @@ function displayText(json) {
   
   // Debug info
   document.querySelector('.debug-info').innerHTML = `${json}`;
-
+*/
   window.castReceiverManager.setApplicationState(json);
 }
 
