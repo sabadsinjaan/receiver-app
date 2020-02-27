@@ -31,14 +31,14 @@ window.onload = () => {
 
   // create a CastMessageBus to handle messages for a custom namespace
   window.messageBus =
-    window.castReceiverManager.getCastMessageBus('urn:x-cast:com.sabadsinjaan.cast.gurbani', cast.receiver.CastMessageBus.MessageType.JSON);
+    window.castReceiverManager.getCastMessageBus('urn:x-cast:com.sabadsinjaan.cast.gurbani', cast.receiver.CastMessageBus.MessageType.STRING);
 
   // handler for the CastMessageBus message event
   window.messageBus.onMessage = (event) => {
     console.log(`Message [${event.senderId}]: ${event.data}`);
     // display the message from the sender
-    document.getElementById('gurmukhi').innerHTML = event.data;
-    //displayText(event.data);
+    //document.getElementById('gurmukhi').innerHTML = event.data;
+    displayText(event.data);
     // inform all senders on the CastMessageBus of the incoming message event
     // sender message listener will be invoked
    // window.messageBus.send(event.senderId, event.data);
