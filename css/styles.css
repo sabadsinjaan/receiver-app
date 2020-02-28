@@ -1,0 +1,17 @@
+@font-face {
+  font-family: gurbaniakharthicktrue;
+  src: url(../fonts/gurbaniakharthicktrue-webfont.ttf);
+}
+
+@font-face {
+  font-family: prabhki;
+  src: url(../fonts/prabhki.ttf);
+}
+
+h1{
+font-family: prabhki;
+font-size: 300%;
+text-align: center;
+padding-top: 30px;
+color: #0000FF
+}
