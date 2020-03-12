@@ -8,8 +8,13 @@
   src: url(../fonts/prabhki.ttf);
 }
 
+@font-face {
+  font-family: gurbaniakhar;
+  src: url(../fonts/gurbaniakhar.ttf);
+}
+
 h1{
-font-family: gurbaniakharthicktrue;
+font-family: gurbaniakhar;
 font-size: 500%;
 text-align: center;
 padding-top: 30px;
